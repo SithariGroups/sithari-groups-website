@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+ <!-- Navbar -->
+ <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Upcoming Events</a></li>
+        <li><a href="music-instruments.html">Music Instruments</a></li>
+        <li><a href="class-details.html">Class Details</a></li>
+        <li><a href="feedback.html">Submit Feedback</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="services.html">Service</a></li>
+    </ul>
+</nav>
+<body>
+    <header>
+        <img src="images/Logo.png" alt="Logo" class="logo">
+        <h1>Sithari Groups Gallery</h1>
+    </header>
+
+    <main id="gallery">
+        <!-- Events Category -->
+        <section class="gallery-section">
+            <h2>Events</h2>
+            <div class="gallery-grid" id="events-grid">
+                <!-- Images and Videos will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Classes Category -->
+        <section class="gallery-section">
+            <h2>Classes</h2>
+            <div class="gallery-grid" id="classes-grid">
+                <!-- Images and Videos will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Instruments Category -->
+        <section class="gallery-section">
+            <h2>Instruments</h2>
+            <div class="gallery-grid" id="instruments-grid">
+                <!-- Images and Videos will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Image/Video Popup -->
+    <div id="modal" class="modal">
+        <span id="close-modal" class="close">&times;</span>
+        <div id="modal-content" class="modal-content">
+            <img id="modal-image" src="" alt="Large View">
+            <div id="modal-video" class="modal-video"></div>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sithari Groups. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/gallery.js"></script>
+</body>
+</html>
